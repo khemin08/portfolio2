@@ -53,3 +53,20 @@ nav a:hover{
 .btn:hover{
     background:#084298;
 }
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    animation: slideDown 1s ease-out;
+}
+
+/* Animation */
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
