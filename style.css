@@ -1,102 +1,311 @@
-/* ===========================
-   พื้นหลังเว็บไซต์
-=========================== */
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-body{
+*{
     margin:0;
     padding:0;
+    box-sizing:border-box;
     font-family:'Poppins',sans-serif;
-    background:url("images/bg.jpg") no-repeat center center fixed;
-    background-size:cover;
-    color:#333;
+    scroll-behavior:smooth;
 }
 
-/* เพิ่มพื้นหลังโปร่งใส */
+body{
+    background:linear-gradient(rgba(8,27,41,.75),rgba(8,27,41,.75)),
+    url("images/background.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:#fff;
+}
+
+/*================ Navbar =================*/
+
+nav{
+    position:sticky;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    padding:18px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+    z-index:999;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.4s;
+}
+
+nav a:hover{
+    color:#00e5ff;
+}
+
+/*================ Header =================*/
+
+header{
+    text-align:center;
+    padding:80px 20px;
+}
+
+header img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:6px solid #00e5ff;
+    box-shadow:0 0 40px #00e5ff;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:50px;
+}
+
+header p{
+    font-size:20px;
+    color:#ddd;
+    margin-top:10px;
+}
+
+/*================ Container =================*/
+
 .container{
     width:90%;
     max-width:1200px;
     margin:auto;
-    background:rgba(255,255,255,0.9);
-    padding:30px;
+    padding:50px 0;
+}
+
+/*================ Card =================*/
+
+.card{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
     border-radius:20px;
-    margin-top:30px;
-    margin-bottom:30px;
+
+    padding:30px;
+
+    margin:30px 0;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
 }
 
-/* Header */
+.card:hover{
 
-header{
-    background:linear-gradient(rgba(0,51,102,.8),rgba(0,102,204,.8)),
-    url("images/header.jpg");
-    background-size:cover;
-    background-position:center;
-    color:white;
-    text-align:center;
-    padding:70px;
+    transform:translateY(-12px);
+
+    box-shadow:0 0 30px cyan;
+
 }
 
-/* รูปโปรไฟล์ */
+/*================ Portfolio =================*/
 
-.profile{
-    width:220px;
-    height:220px;
-    border-radius:50%;
-    border:6px solid white;
-    box-shadow:0 0 20px #2196f3;
-    display:block;
-    margin:auto;
+.portfolio{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+gap:30px;
+
 }
-
-/* กล่องผลงาน */
 
 .portfolio-box{
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
-    transition:.4s;
-    margin-bottom:25px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(18px);
+
+border-radius:20px;
+
+overflow:hidden;
+
+transition:.4s;
+
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+
 }
 
 .portfolio-box:hover{
-    transform:translateY(-8px);
+
+transform:translateY(-12px) scale(1.03);
+
 }
 
 .portfolio-box img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
 }
 
 .portfolio-box h2{
-    padding:15px;
-    color:#1565c0;
+
+padding:20px;
+
+color:#00e5ff;
+
 }
 
 .portfolio-box ul{
-    padding:0 35px 20px;
+
+padding:0 35px 30px;
+
 }
 
-/* ปุ่ม */
+.portfolio-box li{
+
+margin:12px 0;
+
+}
+
+/*================ Button =================*/
 
 button{
-    background:#1565c0;
-    color:white;
-    padding:12px 25px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
+
+padding:12px 30px;
+
+background:#00bcd4;
+
+border:none;
+
+border-radius:50px;
+
+color:white;
+
+font-size:17px;
+
+cursor:pointer;
+
+transition:.4s;
+
 }
 
 button:hover{
-    background:#ff9800;
+
+background:#00e5ff;
+
+box-shadow:0 0 20px cyan;
+
 }
 
-/* Footer */
+/*================ Contact =================*/
+
+.social{
+
+text-align:center;
+
+margin-top:30px;
+
+}
+
+.social a{
+
+font-size:35px;
+
+margin:15px;
+
+color:white;
+
+transition:.4s;
+
+}
+
+.social a:hover{
+
+color:#00e5ff;
+
+transform:scale(1.3);
+
+}
+
+/*================ Footer =================*/
 
 footer{
-    background:#003366;
-    color:white;
-    text-align:center;
-    padding:20px;
+
+margin-top:60px;
+
+padding:25px;
+
+text-align:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+}
+
+/*================ Animation =================*/
+
+.card,
+
+.portfolio-box{
+
+animation:show 1s ease;
+
+}
+
+@keyframes show{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*================ Responsive =================*/
+
+@media(max-width:768px){
+
+header h1{
+
+font-size:35px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+header img{
+
+width:150px;
+
+height:150px;
+
+}
+
 }
