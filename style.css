@@ -1,3 +1,7 @@
+/* ===============================
+   Colorful Modern Portfolio Theme
+================================ */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
@@ -5,306 +9,456 @@
     padding:0;
     box-sizing:border-box;
     font-family:'Poppins',sans-serif;
-    scroll-behavior:smooth;
 }
 
 body{
-    background:linear-gradient(rgba(8,27,41,.75),rgba(8,27,41,.75)),
-    url("images/background.jpg");
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-    color:#fff;
+
+    background:
+    linear-gradient(135deg,
+    #89f7fe,
+    #66a6ff,
+    #c471ed);
+
+    min-height:100vh;
+
+    color:#333;
+
 }
 
-/*================ Navbar =================*/
+
+/* ===============================
+        Navigation
+================================ */
 
 nav{
-    position:sticky;
-    top:0;
-    width:100%;
+
     display:flex;
+
     justify-content:center;
-    align-items:center;
-    gap:25px;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
     padding:18px;
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(15px);
-    box-shadow:0 5px 20px rgba(0,0,0,.3);
-    z-index:999;
+
+    background:white;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
 }
+
 
 nav a{
-    color:white;
+
     text-decoration:none;
+
+    color:#5b2cff;
+
     font-weight:600;
-    transition:.4s;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
 }
+
 
 nav a:hover{
-    color:#00e5ff;
+
+    background:#ff6ec7;
+
+    color:white;
+
+    transform:translateY(-3px);
+
 }
 
-/*================ Header =================*/
+
+
+/* ===============================
+        Header
+================================ */
 
 header{
+
     text-align:center;
-    padding:80px 20px;
+
+    padding:70px 20px;
+
 }
+
 
 header img{
-    width:180px;
-    height:180px;
+
+    width:190px;
+
+    height:190px;
+
     border-radius:50%;
-    border:6px solid #00e5ff;
-    box-shadow:0 0 40px #00e5ff;
+
     object-fit:cover;
-    margin-bottom:20px;
+
+    border:8px solid white;
+
+    box-shadow:
+    0 0 30px #ff6ec7;
+
 }
+
 
 header h1{
-    font-size:50px;
+
+    margin-top:25px;
+
+    font-size:45px;
+
+    color:white;
+
+    text-shadow:
+    3px 3px 10px #555;
+
 }
+
 
 header p{
+
+    color:white;
+
     font-size:20px;
-    color:#ddd;
-    margin-top:10px;
+
 }
 
-/*================ Container =================*/
+
+
+/* ===============================
+        Container
+================================ */
 
 .container{
+
     width:90%;
+
     max-width:1200px;
+
     margin:auto;
-    padding:50px 0;
+
+    padding:40px 0;
+
 }
 
-/*================ Card =================*/
+
+
+/* ===============================
+        Card
+================================ */
 
 .card{
 
-    background:rgba(255,255,255,.12);
+    background:white;
 
-    backdrop-filter:blur(18px);
-
-    border-radius:20px;
+    border-radius:25px;
 
     padding:30px;
 
-    margin:30px 0;
+    margin:25px 0;
 
-    border:1px solid rgba(255,255,255,.2);
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.15);
 
     transition:.4s;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.3);
-
 }
+
 
 .card:hover{
 
-    transform:translateY(-12px);
+    transform:translateY(-10px);
 
-    box-shadow:0 0 30px cyan;
+    box-shadow:
+    0 20px 40px rgba(255,0,150,.3);
 
 }
 
-/*================ Portfolio =================*/
+
+
+/* ===============================
+       Portfolio
+================================ */
+
 
 .portfolio{
 
-display:grid;
+    display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
 
-gap:30px;
+    gap:30px;
 
 }
+
+
 
 .portfolio-box{
 
-background:rgba(255,255,255,.12);
+    background:white;
 
-backdrop-filter:blur(18px);
+    border-radius:25px;
 
-border-radius:20px;
+    overflow:hidden;
 
-overflow:hidden;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
 
-transition:.4s;
-
-box-shadow:0 10px 30px rgba(0,0,0,.3);
+    transition:.4s;
 
 }
+
 
 .portfolio-box:hover{
 
-transform:translateY(-12px) scale(1.03);
+    transform:
+    translateY(-12px)
+    rotate(1deg);
 
 }
+
+
 
 .portfolio-box img{
 
-width:100%;
+    width:100%;
 
-height:220px;
+    height:220px;
 
-object-fit:cover;
+    object-fit:cover;
 
 }
+
+
 
 .portfolio-box h2{
 
-padding:20px;
+    color:#ff4081;
 
-color:#00e5ff;
+    padding:20px;
 
 }
+
+
 
 .portfolio-box ul{
 
-padding:0 35px 30px;
+    padding:0 35px 30px;
 
 }
+
+
 
 .portfolio-box li{
 
-margin:12px 0;
+    margin:12px;
 
 }
 
-/*================ Button =================*/
+
+
+/* ===============================
+        Title
+================================ */
+
+
+h1,h2{
+
+    font-weight:700;
+
+}
+
+
+.section-title{
+
+    text-align:center;
+
+    color:white;
+
+    font-size:35px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* ===============================
+        Button
+================================ */
+
 
 button{
 
-padding:12px 30px;
+    background:
+    linear-gradient(
+    45deg,
+    #ff4081,
+    #7c4dff
+    );
 
-background:#00bcd4;
+    color:white;
 
-border:none;
+    border:none;
 
-border-radius:50px;
+    padding:12px 30px;
 
-color:white;
+    border-radius:50px;
 
-font-size:17px;
+    cursor:pointer;
 
-cursor:pointer;
+    font-size:16px;
 
-transition:.4s;
+    transition:.3s;
 
 }
+
 
 button:hover{
 
-background:#00e5ff;
+    transform:scale(1.1);
 
-box-shadow:0 0 20px cyan;
-
-}
-
-/*================ Contact =================*/
-
-.social{
-
-text-align:center;
-
-margin-top:30px;
+    box-shadow:
+    0 0 20px #ff4081;
 
 }
+
+
+
+/* ===============================
+        Contact
+================================ */
+
 
 .social a{
 
-font-size:35px;
+    display:inline-block;
 
-margin:15px;
+    margin:15px;
 
-color:white;
+    font-size:35px;
 
-transition:.4s;
+    color:#7c4dff;
+
+    transition:.3s;
 
 }
+
 
 .social a:hover{
 
-color:#00e5ff;
+    color:#ff4081;
 
-transform:scale(1.3);
+    transform:scale(1.3);
 
 }
 
-/*================ Footer =================*/
+
+
+/* ===============================
+        Footer
+================================ */
+
 
 footer{
 
-margin-top:60px;
+    background:white;
 
-padding:25px;
+    padding:25px;
 
-text-align:center;
+    text-align:center;
 
-background:rgba(255,255,255,.08);
+    color:#7c4dff;
 
-backdrop-filter:blur(20px);
+    margin-top:50px;
 
 }
 
-/*================ Animation =================*/
+
+
+/* ===============================
+        Animation
+================================ */
+
 
 .card,
-
 .portfolio-box{
 
-animation:show 1s ease;
+    animation:
+    fade .8s ease;
 
 }
 
-@keyframes show{
 
-from{
+@keyframes fade{
 
-opacity:0;
+    from{
 
-transform:translateY(50px);
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
 
 }
 
-to{
 
-opacity:1;
 
-transform:translateY(0);
+/* ===============================
+        Mobile
+================================ */
 
-}
-
-}
-
-/*================ Responsive =================*/
 
 @media(max-width:768px){
 
+
 header h1{
 
-font-size:35px;
+    font-size:32px;
 
 }
+
 
 nav{
 
-flex-direction:column;
+    flex-direction:column;
 
-gap:15px;
+    text-align:center;
 
 }
+
 
 header img{
 
-width:150px;
+    width:150px;
 
-height:150px;
+    height:150px;
 
 }
+
 
 }
