@@ -1,7 +1,11 @@
-/* ================================
-   Portfolio Website CSS
-   5 Pages Design
-================================ */
+/* =================================
+   Pink Modern Portfolio CSS
+   index.html
+   profile.html
+   education.html
+   portfolio.html
+   contact.html
+================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
 
@@ -19,27 +23,26 @@ body{
     background:
     linear-gradient(
         135deg,
-        #89f7fe,
-        #66a6ff,
-        #ff9a9e
+        #ffdde1,
+        #ee9ca7,
+        #ff6f91
     );
 
     min-height:100vh;
 
-    color:#333;
+    color:#444;
 
 }
 
 
 
-/* ================================
-        Navigation Menu
-================================ */
-
+/* ======================
+        Navigation
+====================== */
 
 nav{
 
-    background:white;
+    background:rgba(255,255,255,0.95);
 
     display:flex;
 
@@ -55,10 +58,10 @@ nav{
 
     top:0;
 
-    z-index:999;
+    z-index:1000;
 
     box-shadow:
-    0 5px 20px rgba(0,0,0,.15);
+    0 5px 20px rgba(255,105,135,.3);
 
 }
 
@@ -67,11 +70,11 @@ nav a{
 
     text-decoration:none;
 
-    color:#6a11cb;
+    color:#d63384;
 
     font-weight:600;
 
-    padding:10px 22px;
+    padding:10px 25px;
 
     border-radius:30px;
 
@@ -83,22 +86,24 @@ nav a{
 nav a:hover{
 
     background:
+
     linear-gradient(
     45deg,
-    #ff6ec7,
-    #7c4dff
+    #ff6f91,
+    #d63384
     );
 
     color:white;
+
+    transform:translateY(-3px);
 
 }
 
 
 
-/* ================================
+/* ======================
         Header
-================================ */
-
+====================== */
 
 header{
 
@@ -116,16 +121,16 @@ header h1{
     color:white;
 
     text-shadow:
-    2px 3px 8px #555;
+    2px 3px 10px #b03060;
 
 }
 
 
 header p{
 
-    color:white;
-
     font-size:20px;
+
+    color:white;
 
 }
 
@@ -137,23 +142,23 @@ header p{
 
     height:200px;
 
-    border-radius:50%;
-
     object-fit:cover;
+
+    border-radius:50%;
 
     border:8px solid white;
 
     box-shadow:
+
     0 0 30px #ff4081;
 
 }
 
 
 
-/* ================================
-        Main Container
-================================ */
-
+/* ======================
+        Container
+====================== */
 
 .container{
 
@@ -169,24 +174,23 @@ header p{
 
 
 
-/* ================================
-        General Card
-================================ */
-
+/* ======================
+        Card
+====================== */
 
 .card{
 
     background:white;
 
-    padding:30px;
-
     border-radius:25px;
+
+    padding:30px;
 
     margin:25px 0;
 
     box-shadow:
 
-    0 10px 25px rgba(0,0,0,.15);
+    0 10px 25px rgba(214,51,132,.2);
 
     transition:.4s;
 
@@ -195,17 +199,19 @@ header p{
 
 .card:hover{
 
-    transform:
-    translateY(-10px);
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 15px 35px rgba(255,64,129,.35);
 
 }
 
 
 
-/* ================================
-        Profile Page
-================================ */
-
+/* ======================
+        Profile
+====================== */
 
 .info{
 
@@ -221,29 +227,27 @@ header p{
 
 .info-box{
 
-    background:#fff;
+    background:#fff0f5;
 
-    padding:20px;
+    padding:25px;
 
     border-radius:20px;
 
     text-align:center;
 
-    box-shadow:
-    0 8px 20px rgba(0,0,0,.12);
-
 }
 
 
 
-/* ================================
-        Education Page
-================================ */
-
+/* ======================
+        Education
+====================== */
 
 .timeline{
 
-    border-left:5px solid #ff4081;
+    border-left:
+
+    5px solid #ff6f91;
 
     padding-left:25px;
 
@@ -254,23 +258,23 @@ header p{
 
     background:white;
 
-    padding:20px;
+    padding:25px;
 
     margin-bottom:25px;
 
     border-radius:20px;
 
     box-shadow:
-    0 8px 20px rgba(0,0,0,.15);
+
+    0 8px 20px rgba(0,0,0,.1);
 
 }
 
 
 
-/* ================================
-        Portfolio Page
-================================ */
-
+/* ======================
+        Portfolio
+====================== */
 
 .portfolio{
 
@@ -279,7 +283,7 @@ header p{
     grid-template-columns:
     repeat(auto-fit,minmax(300px,1fr));
 
-    gap:25px;
+    gap:30px;
 
 }
 
@@ -294,7 +298,8 @@ header p{
     overflow:hidden;
 
     box-shadow:
-    0 10px 25px rgba(0,0,0,.15);
+
+    0 10px 25px rgba(214,51,132,.2);
 
     transition:.4s;
 
@@ -304,10 +309,12 @@ header p{
 .portfolio-box:hover{
 
     transform:
+
     translateY(-12px);
 
     box-shadow:
-    0 0 25px #ff6ec7;
+
+    0 0 30px #ff6f91;
 
 }
 
@@ -317,7 +324,7 @@ header p{
 
     width:100%;
 
-    height:200px;
+    height:220px;
 
     object-fit:cover;
 
@@ -326,9 +333,9 @@ header p{
 
 .portfolio-box h2{
 
-    color:#7c4dff;
-
     padding:20px;
+
+    color:#d63384;
 
 }
 
@@ -341,10 +348,9 @@ header p{
 
 
 
-/* ================================
-        Contact Page
-================================ */
-
+/* ======================
+        Contact
+====================== */
 
 .contact-box{
 
@@ -357,7 +363,8 @@ header p{
     text-align:center;
 
     box-shadow:
-    0 10px 25px rgba(0,0,0,.15);
+
+    0 10px 25px rgba(214,51,132,.2);
 
 }
 
@@ -368,14 +375,13 @@ header p{
 
     margin:15px;
 
-    color:#7c4dff;
+    color:#d63384;
 
     text-decoration:none;
 
     font-size:18px;
 
 }
-
 
 
 .contact-box a:hover{
@@ -386,10 +392,9 @@ header p{
 
 
 
-/* ================================
+/* ======================
         Button
-================================ */
-
+====================== */
 
 button{
 
@@ -398,9 +403,8 @@ button{
     linear-gradient(
     45deg,
     #ff4081,
-    #7c4dff
+    #d63384
     );
-
 
     color:white;
 
@@ -421,47 +425,50 @@ button:hover{
 
     transform:scale(1.1);
 
+    box-shadow:
+
+    0 0 20px #ff6f91;
+
 }
 
 
 
-/* ================================
+/* ======================
         Footer
-================================ */
-
+====================== */
 
 footer{
 
     background:white;
 
+    color:#d63384;
+
     text-align:center;
 
     padding:20px;
 
-    color:#7c4dff;
-
-    margin-top:40px;
+    margin-top:50px;
 
 }
 
 
 
-/* ================================
+/* ======================
         Animation
-================================ */
-
+====================== */
 
 .card,
 .portfolio-box,
 .timeline-item{
 
     animation:
-    fade .8s ease;
+
+    fadeIn .8s ease;
 
 }
 
 
-@keyframes fade{
+@keyframes fadeIn{
 
     from{
 
@@ -483,13 +490,11 @@ footer{
 
 
 
-/* ================================
-        Mobile
-================================ */
-
+/* ======================
+        Responsive
+====================== */
 
 @media(max-width:768px){
-
 
 header h1{
 
@@ -507,13 +512,6 @@ nav{
 }
 
 
-.container{
-
-    width:95%;
-
-}
-
-
 .profile-img{
 
     width:150px;
@@ -521,6 +519,5 @@ nav{
     height:150px;
 
 }
-
 
 }
