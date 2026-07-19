@@ -623,4 +623,62 @@ nav{
 }
 
 
+#portfolio{
+
+    max-width: 1000px;
+
+    margin: auto;
+
 }
+
+.portfolio-box{
+
+    background: #fff;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+}
+
+.portfolio-img{
+
+    width: 100%;
+
+    max-width: 500px;
+
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto 15px;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+
+}
+
+.portfolio-box h2{
+
+    color: #0066cc;
+
+    margin-bottom: 10px;
+
+}
+
+.portfolio-box ul{
+
+    padding-left: 20px;
+
+}
+
+.portfolio-box li{
+
+    margin-bottom: 8px;
+
+}}
